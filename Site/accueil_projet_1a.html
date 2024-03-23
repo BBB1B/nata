@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 
 <!--Tryptique pour passer de local en remote :
+git pull origin main  
+
 git add .
-git commit -m "commentaire à la con"
+git commit -m "commentaire"
 git push
 -->
+
+. 
 
 <html lang="fr">
     <head>
@@ -16,7 +20,74 @@ git push
         <link rel="icon" type="image/png" sizes="32x32" href="image/logo_test.png" /> <!-- Glisser une image/logo de taille 32x32 qui apparaîtra dans le moteur de recherche -->
         <meta name="description" content="Décrire en quelques lignes l'objet de notre page"> <!-- Description apparaissant sur le moteur de recherche -->
     </head>
-    <body>
+
+    <body id="home_page_nancy">
+
+        <svg width="105%" height="105%" class ="gradient">
+            <defs>
+                <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%" >
+                    <stop offset="10%" style="stop-color:#e8e2cc;stop-opacity:1" />
+                    <stop offset="90%" style="stop-color:#bbaf84;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="100%" height="100%" fill="url(#g1)" />
+        </svg>
+
+        <nav> <!--Rajouter les liens des pages-->
+            <ul class="menu">
+    
+              <li><a href="accueil_projet_de_langue.html">Accueil</a></li>
+              <li><a href="a_propos.html">À propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="source.html">Sources</a></li>
+              <li><a href="credits.html">Crédits</a></li>
+              </li>
+            </ul>
+        </nav>
+
+        <div class="flanc_droit">
+        
+        <img src="image/menu.png"  class="image_menu"/> 
+
+        <nav class="menu_deroulant_lateral"> <!--Rajouter les liens des pages-->
+            <li class="principal"><span  class="fleche"><img src = "image/arrow.png"/></span><a href="accueil_projet_1a.html">Accueil</a></li>
+            <li class="principal"><span  class="fleche"><img src = "image/arrow.png"/></span><a href="ducal.html">   Monuments ducaux</a>
+                <ul class="niveau1">
+                    <li><a href="monuments/stanislas.html">Place Stanislas</a></li>
+                    <li><a href="monuments/pepiniere.html">Parc de la pépinière</a></li>
+                    <li><a href="monuments/ducal.html">Palais ducal</a></li>
+                </ul>
+            </li>
+            <li  class="principal">  <span  class="fleche"><img src = "image/arrow.png"/></span><a href="religieux.html">   Monuments religieux</a> 
+                <ul class="niveau1">
+                    <li><a href="monuments/cordeliers.html">   Eglise des Cordeliers</a></li>
+                    <li><a href = "monuments/annonciation.html">   Cathédrale de l'Annonciation</a></li>
+                </ul>
+            </li>
+            <li  class="principal"><span  class="fleche" onclick="Affichern1()"><img src = "image/arrow.png"/></span><a href="particuliers.html">   Hôtels particuliers</a>
+                <ul class="niveau1">
+                    <li><a href="monuments/callot.html">Maison Callot</a></li>
+                    <li><a href="monuments/chastenoy.html">Hôtels de Chastenoy</a></li>
+                    <li><a href="monuments/deux_sirenes.html">Hôtel des Deux Sirènes</a></li>
+                    <li><a href="monuments/ducal.html">Hôtel Ferraris</a></li>
+                    <li><a href="monuments/haussonville.html">Hôtel d'Haussonville</a></li>
+                    <li><a href="monuments/ligneville.html">Hôtel de Ligneville</a></li>
+                    <li><a href="monuments/lillebonne.html">Hôtel de Lillebonne</a></li>
+                    <li><a href="monuments/loups.html">Hôtel des Loups</a></li>
+                    <li><a href="monuments/ludre.html">Hôtel de Ludre</a></li>
+                </ul>
+            </li>
+            <li class="principal"><span  class="fleche" onclick="Affichern1()"><img src = "image/arrow.png"/></span><a href="#">Autres points remarquables</a>
+                <ul class="niveau1">
+                    <li><a href="monuments/saint-epvre.html">Place Saint-Epvre</a></li>
+                    <li><a href="monuments/craffe.html">Porte de la Craffe</a></li>
+                    <li><a href="monuments/grande_rue.html"></a></li>
+                </ul>
+            </li>
+        </nav>
+
+        </div>
+
         <!---->
         <!-- sémantique du site
             a gauche : menu déroulant avec les pages de chaque monument
@@ -27,120 +98,161 @@ git push
         -->
         <!-- target="_blank" : permet d'ouvrir un nouvel onglet-->
 
-        <img src="image/carte_nancy_vertical.png" alt="" usemap="#carte" />
+        <div class="cadre_titre"> 
 
-        <map name="carte">
-            <area
-              shape="poly"
-              coords="550,832,580,829,609,827,609,804,590,802,563,807,547,813"
-              href="monuments/callot.html"
-              alt="Maison Callot" /> <!-- Maison Callot-->
-          
-            <area
-              shape="poly"
-              coords="616,1003,636,979,747,975,766,997,769,1083,750,1104,636,1108,616,1092"
-              href="monuments/stanislas.html"
-              alt="Place Stanislas" /> <!-- Place Stanislas-->
 
-              <area
-              shape="poly"
-              coords="567,386,570,458,596,532,641,531,636,495,775,497,784,373,638,375"
-              href="monuments/ducal.html"
-              alt="Palais Ducal" /> <!-- Palais Ducal-->
 
-              <area
-              shape="poly"
-              coords="520,165,564,166,568,108,536,109"
-              href="monuments/craffe.html"
-              alt="Porte de la Craffe" /> <!-- Porte de la Craffe-->
+        </div>
 
-              <area
-              shape="poly"
-              coords="429,494,457,483,446,448,423,455"
-              href="monuments/haussonville.html"
-              alt="Hôtel d'Haussonville" /> <!-- Hôtel d'Haussonville-->
+        <div class="cadre">
+            <h3  id="introduction">Le patrimoine architectural de Nancy</h3>
 
-              <area
-              shape="poly"
-              coords="569,356,574,376,618,371,669,371,670,358,648,355,647,342,622,342,624,352"
-              href="monuments/cordeliers.html"
-              alt="Eglise des Cordeliers" /> <!--Eglise des Cordeliers-->
+            <div class="introduction">
+                <p>Ecrire l'introduction ici.</p>
 
-              <area
-              shape="poly"
-              coords="765,1384,770,1486,831,1486,828,1382"
-              href="mounments/annonciation.html"
-              alt="Cathédrale de l'Annonciation" /> <!-- Cathédrale de l'Annonciation -->
+            </div>
 
-              <area
-              shape="poly"
-              coords="529,168,549,170,554,236,564,341,568,362,566,374,566,387,568,458,594,532,614,577,620,663,619,739,619,884,610,884,611,785,610,671,610,626,597,571,580,524,556,466,555,398,558,358,549,257,532,241,530,201"
-              href="monuments/grande_rue.html"
-              alt="Grande Rue" /> <!-- Grande Rue-->
+            <div class="cliquable">
 
-              <area
-              shape="poly"
-              coords="577,719,576,738,609,737,610,719"
-              href="monuments/ligneville.html"
-              alt="Hôtel de Ligneville" /> <!-- Hotel de Ligneville-->
+            <img class="carte_nancy" src="image/carte_avancee.png" alt="" usemap="#carte" /> <!--Pour la carte cliquable : essayer avec des img en position:absolute sur la carte -->
 
-              <area
-              shape="poly"
-              coords="496,481,500,498,525,494,522,474"
-              href="monuments/deux_sirenes.html"
-              alt="Hôtel des Deux Sirènes" /> <!--Hotel des 2 sirènes-->
+                <div class="maison-callot">
+                    <svg width="100%" height="100%" class="carre"> 
+                        <a href="monuments/callot.html">
+                            <image href= "image/maison callot.svg" width="100%" height="100%" />
+                        </a>
+                    </svg>
+                </div>
 
-              <area
-              shape="poly"
-              coords="558,258,559,276,600,274,602,254"
-              href="monuments/chastenoy.html"
-              alt="Hôtel de Chastenoy" /> <!--Hotel de Chastenoy-->
+                <div class="place-stanislas">
+                    <svg width="100%" height="100%" class="carre"> 
+                        <a href="monuments/stanislas.html">
+                            <image href= "image/stan.svg" width="100%" height="100%" />
+                        </a>
+                    </svg>
+                </div>
 
-              <area
-              shape="poly"
-              coords="322,337,345,396,380,391,371,384,366,374,348,329"
-              href="monuments/loups.html"
-              alt="Hôtel des Loups" /> <!--Hotel des Loups-->
+                <div class="palais-ducal">
+                    <svg width="100%" height="100%" class="carre"> 
+                        <a href="monuments/ducal.html">
+                            <!--<image href= "" width="100%" height="100%" />-->
+                        </a>
+                    </svg>
+                </div>
 
-              <area
-              shape="poly"
-              coords="482,523,474,539,482,563,494,571,532,569,567,570,592,570,577,528,534,534,522,515"
-              href="monuments/saint-epvre.html"
-              alt="Place Saint-Epvre" /> <!-- Place Saint-Epvre -->
+                <div class="porte-craffe">
+                    <svg width="100%" height="100%" class="carre"> 
+                        <a href="monuments/craffe.html">
+                            <image href= "image/craffe.svg" width="100%" height="100%" />
+                        </a>
+                    </svg>
+                </div>
 
-              <area
-              shape="poly"
-              coords="391,654,386,629,364,632,368,656"
-              href="monuments/lillebonne.html"
-              alt="Hôtel de Lillebonne" /> <!--Hotel de Lillebonne-->
+                <div class="hotel-haussonville">
+                    <svg width="100%" height="100%" class="carre">
+                        <a href="monuments/haussonville.html">
+                            <image href= "image/haussonville.svg" width="100%" height="100%" />
+                        </a>
+                    </svg>
+                </div>
 
-              <area
-              shape="poly"
-              coords="482,689,428,687,428,726,472,739"
-              href="monuments/ludre.html"
-              alt="Hôtel de Ludre" /> <!--Hotel de Ludre / Hotel de Custine-->
+                <div class="eglise-cordeliers">
+                    <svg width="100%" height="100%" class="carre">
+                        <a href="monuments/cordeliers.html">
+                            <!--<image href= "" width="100%" height="100%" />-->
+                        </a>
+                    </svg>
+                </div>
 
-              <area
-              shape="poly"
-              coords="368,288,372,299,418,278,413,263"
-              href="monuments/ferraris.html"
-              alt="Hôtel Ferraris" /> <!-- Hotel Ferraris-->
+                <div class="cathedrale-annonciation">
+                    <svg width="100%" height="100%" class="carre">
+                        <a href="monuments/annonciation.html">
+                            <image href= "image/cathedrale.svg" width="100%" height="100%" />
+                        </a>
+                    </svg>
+                </div>
 
-              <area
-              shape="poly"
-              coords="524,596,526,665,534,680,542,684,552,685,558,679,568,663,565,594,564,574,532,575"
-              href="monuments/saint-epvre.html"
-              alt="???" /> <!--Eglise Saint-Epvre --> 
+                <div class="hotel-ligneville">
+                    <svg width="100%" height="100%" class="carre">
+                        <a href="monuments/ligneville.html">
+                            <image href= "image/ligneville.svg" width="100%" height="100%" />
+                        </a>
+                    </svg>
+                </div>
 
-              <area
-              shape="poly"
-              coords="790,243,786,363,792,378,780,571,782,804,957,813,1080,811,1079,264,1017,268,908,255,906,247"
-              href="monuments/pepiniere.html"
-              alt="Parc de la Pépinière--" /> <!-- Parc de la Pépinière-->
 
-          </map> <!-- Ca marche ! encore faut-il bien savoir les coordonnées de chaque bâtiment sur la carte ...-->       
+                <div class="deux-sirenes">
+                    <svg width="100%" height="100%" class="carre">
+                        <a href="monuments/deux_sirenes.html">
+                            <!--<image href= "" width="100%" height="100%" />-->
+                        </a>
+                    </svg>
+                </div>
+
+                
+                <div class="chastenoy">
+                    <svg width="100%" height="100%" class="carre">
+                        <a href="monuments/chastenoy.html">
+                            <!--<image href= "" width="100%" height="100%" />-->
+                        </a>
+                    </svg>
+                </div>
+
+
+                <div class="hotel-loups">
+                    <svg width="100%" height="100%" class="carre">
+                        <a href="monuments/loups.html">
+                            <!--<image href= "" width="100%" height="100%" />-->
+                        </a>
+                    </svg>
+                </div>
+
+                
+                <div class="saint-epvre">
+                    <svg width="100%" height="100%" class="carre">
+                        <a href="monuments/saint-epvre.html">
+                            <!--<image href= "" width="100%" height="100%" />-->
+                        </a>
+                    </svg>
+                </div>
+ 
+                <div class="hotel-lillebonne">
+                    <svg width="100%" height="100%" class="carre">
+                        <a href="monuments/lillebonne.html">
+                            <image href= "image/lillebonne.svg" width="100%" height="100%" />
+                        </a>
+                    </svg>
+                </div>
+
+                <div class="hotel-ludre">
+                    <svg width="100%" height="100%" class="carre">
+                        <a href="monuments/ludre.html">
+                            <!--<image href= "" width="100%" height="100%" />-->
+                        </a>
+                    </svg>
+                </div>
+ 
+                <div class="hotel-ferraris">
+                    <svg width="100%" height="100%" class="carre">
+                        <a href="monuments/ferraris.html">
+                            <!--<image href= "" width="100%" height="100%" />-->
+                        </a>
+                    </svg>
+                </div>
+
+                <div class="parc-pepiniere">
+                    <svg width="100%" height="100%" class="carre">
+                        <a href="monuments/pepiniere.html">
+                            <!--<image href= "" width="100%" height="100%" />-->
+                        </a>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Ca marche ! encore faut-il bien savoir les coordonnées de chaque bâtiment sur la carte ...-->       
           <!-- Faire un à propos avec notre photo où en on travail :) -->   
           <!-- Créer un dossier JS-->
+        </div>
         <script src="JS/accueil.js">
         </script>
     </body>
