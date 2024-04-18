@@ -8,7 +8,24 @@ git commit -m "commentaire"
 git push
 -->
 
-. 
+.
+
+<!--
+ pour la police des titres: voir police Bricktown
+ pour les textes : rester simple, avec du arial
+ réduire la taille des polices pour les textes.
+ faire des coupures entre chaque paragraphe
+ couleur : ok, on aura de rechanger
+ Faire en sorte que les monuments sur la carte paraissent réellement cliquable
+ format horizontal : carte horizontale
+ pour le menu : enlever les crédits, les contacts, etc. et les mettre en bas de page
+ le menu hamburger : uniquement pour les formats téléphone portable
+ intégrer le moodboard : https://www.pinterest.fr/pin/815151601333473613/
+ Identité visuelle : en bas de page, dans le cadre : logo surtout
+mettre du gras sur les mots importants
+
+
+-->
 
 <html lang="fr">
     <head>
@@ -19,15 +36,18 @@ git push
         <title>Nancy Avant 1766</title>
         <link rel="icon" type="image/png" sizes="32x32" href="image/logo_test.png" /> <!-- Glisser une image/logo de taille 32x32 qui apparaîtra dans le moteur de recherche -->
         <meta name="description" content="Décrire en quelques lignes l'objet de notre page"> <!-- Description apparaissant sur le moteur de recherche -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dekko&family=Just+Another+Hand&display=swap" rel="stylesheet">
     </head>
 
     <body id="home_page_nancy">
 
         <svg width="105%" height="105%" class ="gradient">
             <defs>
-                <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%" >
-                    <stop offset="10%" style="stop-color:#e8e2cc;stop-opacity:1" />
-                    <stop offset="90%" style="stop-color:#bbaf84;stop-opacity:1" />
+                <linearGradient id="g1" x1="50%" y1="0%" x2="50%" y2="100%" >
+                    <stop offset="10%" style="stop-color:#dab96e;stop-opacity:0.4" />
+                    <stop offset="90%" style="stop-color:#ae860e;stop-opacity:0.4" />
                 </linearGradient>
             </defs>
             <rect x="0" y="0" width="100%" height="100%" fill="url(#g1)" />
@@ -36,12 +56,12 @@ git push
         <nav> <!--Rajouter les liens des pages-->
             <ul class="menu">
     
-              <li><a href="accueil_projet_de_langue.html">Accueil</a></li>
-              <li><a href="a_propos.html">À propos</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="source.html">Sources</a></li>
-              <li><a href="credits.html">Crédits</a></li>
-              </li>
+                    <li><a href="accueil_projet_1a.html">Accueil</a></li>
+                    <li><a href="a_propos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="source.html">Sources</a></li>
+                    <li><a href="credits.html">Crédits</a></li>
+
             </ul>
         </nav>
 
@@ -105,16 +125,19 @@ git push
         </div>
 
         <div class="cadre">
-            <h3  id="introduction">Le patrimoine architectural de Nancy</h3>
+            <h3  id="introduction">Le Patrimoine Architectural de Nancy</h3>
 
             <div class="introduction">
-                <p>Ecrire l'introduction ici.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>  
+
+                <p>Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.</p>  
+                <p>   Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet</p>
 
             </div>
 
             <div class="cliquable">
 
-            <img class="carte_nancy" src="image/carte_avancee.png" alt="" usemap="#carte" /> <!--Pour la carte cliquable : essayer avec des img en position:absolute sur la carte -->
+            <img class="carte_nancy" src="image/carte_avancee_test.png" alt="" usemap="#carte" /> <!--Pour la carte cliquable : essayer avec des img en position:absolute sur la carte -->
 
                 <div class="maison-callot">
                     <svg width="100%" height="100%" class="carre"> 
@@ -252,7 +275,70 @@ git push
             <!-- Ca marche ! encore faut-il bien savoir les coordonnées de chaque bâtiment sur la carte ...-->       
           <!-- Faire un à propos avec notre photo où en on travail :) -->   
           <!-- Créer un dossier JS-->
+
         </div>
+
+        <div class="bas-de-page">
+
+            <div class="resume-menu">
+                <nav> <!--Rajouter les liens des pages-->
+                    <li class="principal"><span><img src = "image/arrow.png"/></span><a href="accueil_projet_1a.html">Accueil</a></li>
+                    <li class="principal"><span><img src = "image/arrow.png"/></span><a href="ducal.html">   Monuments ducaux</a>
+                        <ul>
+                            <li><a href="monuments/stanislas.html">Place Stanislas</a></li>
+                            <li><a href="monuments/pepiniere.html">Parc de la pépinière</a></li>
+                            <li><a href="monuments/ducal.html">Palais ducal</a></li>
+                        </ul>
+                    </li>
+                    <li  class="principal">  <span><img src = "image/arrow.png"/></span><a href="religieux.html">   Monuments religieux</a> 
+                        <ul>
+                            <li><a href="monuments/cordeliers.html">   Eglise des Cordeliers</a></li>
+                            <li><a href = "monuments/annonciation.html">   Cathédrale de l'Annonciation</a></li>
+                        </ul>
+                    </li>
+                    <li  class="principal"><span onclick="Affichern1()"><img src = "image/arrow.png"/></span><a href="particuliers.html">   Hôtels particuliers</a>
+                        <ul>
+                            <li><a href="monuments/callot.html">Maison Callot</a></li>
+                            <li><a href="monuments/chastenoy.html">Hôtels de Chastenoy</a></li>
+                            <li><a href="monuments/deux_sirenes.html">Hôtel des Deux Sirènes</a></li>
+                            <li><a href="monuments/ducal.html">Hôtel Ferraris</a></li>
+                            <li><a href="monuments/haussonville.html">Hôtel d'Haussonville</a></li>
+                            <li><a href="monuments/ligneville.html">Hôtel de Ligneville</a></li>
+                            <li><a href="monuments/lillebonne.html">Hôtel de Lillebonne</a></li>
+                            <li><a href="monuments/loups.html">Hôtel des Loups</a></li>
+                            <li><a href="monuments/ludre.html">Hôtel de Ludre</a></li>
+                        </ul>
+                    </li>
+                    <li class="principal"><span  onclick="Affichern1()"><img src = "image/arrow.png"/></span><a href="#">Autres points remarquables</a>
+                        <ul>
+                            <li><a href="monuments/saint-epvre.html">Place Saint-Epvre</a></li>
+                            <li><a href="monuments/craffe.html">Porte de la Craffe</a></li>
+                            <li><a href="monuments/grande_rue.html"></a></li>
+                        </ul>
+                    </li>
+                </nav>
+            </div>
+
+            <div class="infos">
+                <nav> <!--Rajouter les liens des pages-->
+                    <ul>
+            
+                            <li><a href="accueil_projet_1a.html">Accueil</a></li>
+                            <li><a href="a_propos.html">À propos</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="source.html">Sources</a></li>
+                            <li><a href="credits.html">Crédits</a></li>
+        
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="titre-et-logo">
+                
+            </div>
+
+        </div>
+
         <script src="JS/accueil.js">
         </script>
     </body>
