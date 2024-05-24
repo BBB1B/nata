@@ -1,11 +1,93 @@
 
 /*Il faudra faire un peu de media queries...*/
 
-body#home_page_nancy{
+@media (min-width: 900px) {
+    .flanc_droit{
+        visibility: hidden;
+    }
+    .menu li{
+        visibility: visible;
+    }
+}
+
+@media (max-width: 900px) {
+    .flanc_droit{
+        visibility: visible;
+    }
+    .menu li{
+        visibility: hidden;
+    }
+
+    .cadre{
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+    }
+
+    h3{
+        font-size: x-large;
+    }
+}
+
+body{
+    overflow-x: hidden;
     background-attachment:fixed;
-    background-image: url("../image/Héraldique_meuble_alerion.svg.png"); 
-    background-size:100px;
+    background-size:cover;
+    background-repeat: no-repeat;
     position: relative;
+    margin:0px
+}
+
+
+body#home_page_nancy{
+    background-image: url("../image/fond_nancy.png"); 
+}
+
+body#maison_callot{
+    background-image: url("../image/maison_callot.png"); 
+}
+
+body#place_stanislas{
+    background-image: url("../image/place_stanislas.png"); 
+}
+
+body#haussonville{
+    background-image: url("../image/haussonville.png"); 
+}
+ 
+body#ferraris{
+    background-image: url("../image/ferraris.png"); 
+}
+
+body#craffe{
+    background-image: url("../image/craffe.png"); 
+}
+
+body#loups{
+    background-image: url("../image/loups.png"); 
+}
+
+body#ducal{
+    background-image: url("../image/palais_ducal.png"); 
+}
+
+body#ligneville{
+    background-image: url("../image/ligneville.png"); 
+}
+
+body#lillebonne{
+    background-image: url("../image/lillebonne.png"); 
+}
+
+
+/* Généralités*/
+
+a{
+    text-decoration: none;
+    color:white;
+}
+ 
+li.principal > a{
+    font-size: larger;
 }
 
 /* Menu du haut*/
@@ -21,7 +103,6 @@ body#home_page_nancy{
     position: fixed;
     width: 100%;
     z-index: 7;
-    overflow-x: scroll;
 }
 
 .menu li
@@ -51,10 +132,17 @@ body#home_page_nancy{
     color: #ffffff;
 }
 
-.menu ul a:hover {
-    background-color: #c8c6c600;
-    color:#4f3631;
-    font-weight: bold;
+.menu ul {
+    transform: scale(0);
+    padding: 0 0;
+}
+
+.depliant a{
+    color:#b1b1b1
+}
+
+.depliant a:hover{
+    color:#ffffff
 }
 
 ul{
@@ -65,11 +153,6 @@ li{
     list-style-type: none;
 }
 
-.menu ul a{
-    background-color: #c8c6c600;
-    color:#383838; 
-}
-
 .menu ul {
     transform: scale(0);
     padding : 0 0;
@@ -77,14 +160,14 @@ li{
 }
 
 
-.menu li ul.depliant_langage { 
+.menu li ul.depliant { 
     transform-origin: top center;
     transition: all 300ms ease-in-out;
     background-color: #c8c6c6bd;
     list-style-type: none;
 }
 
-.menu li:hover ul.depliant_langage {
+.menu li:hover ul.depliant {
     transform: scale(1);
     z-index: 5;
     list-style-type: none;
@@ -209,16 +292,18 @@ button{
     /*background-color: #392907;*/
     background-color: #4f3631c0;
     display:block;
-    margin-top: 20%;
+    margin-top: 30%;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 700px;
     text-align: justify;
     padding-left: 8%;
     padding-right: 8%;
     padding-bottom: 3%;
     font-family: "bricktown";
+    font-variant-ligatures: no-common-ligatures;
     font-size:xx-large;
-    padding-top: 5%;
+    padding-top: 2%;
     position:relative;
     z-index: 2;
 }
@@ -390,6 +475,10 @@ div.cliquable{
 
 .palais-ducal{
     position: absolute;
+    top: 20%;
+    left: 53.5%;
+    height: 8%;
+    width: 9%;
     transform:scale(0.9);
     transition: .5s;
 }
@@ -431,6 +520,10 @@ div.cliquable{
 
 .eglise-cordeliers{
     position: absolute;
+    top: 16%;
+    left: 52%;
+    height: 7%;
+    width: 8%;
     transform:scale(0.9);
     transition: .5s;
 }
@@ -472,6 +565,10 @@ div.cliquable{
 
 .deux-sirenes{
     position: absolute;
+    top: 22%;
+    left: 43%;
+    height: 5.5%;
+    width: 10%;
     transform:scale(0.9);
     transition: .5s;
 }
@@ -483,6 +580,10 @@ div.cliquable{
 
 .chastenoy{
     position: absolute;
+    top: 9%;
+    left: 50%;
+    height: 6.5%;
+    width: 6%;
     transform:scale(0.9);
     transition: .5s;
 }
@@ -494,6 +595,10 @@ div.cliquable{
 
 .hotel-loups{
     position: absolute;
+    top: 14%;
+    left: 23%;
+    height: 5.5%;
+    width: 12%;
     transform:scale(0.9);
     transition: .5s;
 }
@@ -531,6 +636,10 @@ div.cliquable{
 
 .hotel-ludre{
     position: absolute;
+    top: 33.5%;
+    left: 35.5%;
+    height: 5%;
+    width: 11%;
     transform:scale(0.9);
     transition: .5s;
 }
@@ -542,6 +651,10 @@ div.cliquable{
 
 .hotel-ferraris{
     position: absolute;
+    top: 11.5%;
+    left: 35.5%;
+    height: 5%;
+    width: 11%;
     transform:scale(0.9);
     transition: .5s;
 }
@@ -581,9 +694,53 @@ div.bas-de-page{
     background-color: #4f3631;
     position:relative;
     display: block;
+    overflow: hidden;
 }
 
-.resume-menu, .infos, .titre-et-logo{
+.marge-bas-de-page{
+    margin: 40px;
+}
+
+.resume-menu, .resume-menu-suite, .titre-et-logo{
     float: left;
-    width: 400px;
+    width: 28%;
+    box-sizing: inherit;
+}
+
+.resume-menu, .resume-menu-suite, .infos{
+    font-family: "louis_george_cafe";
+}
+
+.menu li ul.depliant { 
+    transform-origin: top center;
+    transition: all 300ms ease-in-out;
+    background-color:  #4f3934;
+    color:#b1b1b1
+}
+
+.menu li:hover ul.depliant {
+    transform: scale(1);
+    z-index: 5;
+}
+
+.infos{
+    float: left;
+    width: 16%;
+}
+
+.titre-et-logo h4{
+    font-family: "bricktown";
+    font-variant-ligatures: no-common-ligatures;
+    font-size: larger;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0px;
+}
+
+hr{
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 0.5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }

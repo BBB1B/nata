@@ -27,6 +27,7 @@ mettre du gras sur les mots importants
 
 -->
 
+
 <html lang="fr">
     <head>
         <meta charset="utf-8">
@@ -43,7 +44,7 @@ mettre du gras sur les mots importants
 
     <body id="home_page_nancy">
 
-        <svg width="105%" height="105%" class ="gradient">
+        <svg width="105%" height="100%" class ="gradient">
             <defs>
                 <linearGradient id="g1" x1="50%" y1="0%" x2="50%" y2="100%" >
                     <stop offset="10%" style="stop-color:#dab96e;stop-opacity:0.4" />
@@ -55,13 +56,42 @@ mettre du gras sur les mots importants
 
         <nav> <!--Rajouter les liens des pages-->
             <ul class="menu">
-    
-                    <li><a href="accueil_projet_1a.html">Accueil</a></li>
-                    <li><a href="a_propos.html">À propos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="source.html">Sources</a></li>
-                    <li><a href="credits.html">Crédits</a></li>
 
+                <li><a href="accueil_projet_1a.html">Accueil</a></li>
+                <li><a>  Monuments ducaux  </a>
+                    <ul class="depliant">
+                        <li><a href="monuments/stanislas.html">Place Stanislas</a></li>
+                        <li><a href="monuments/pepiniere.html">Parc de la pépinière</a></li>
+                        <li><a href="monuments/ducal.html">Palais ducal</a></li>
+                    </ul>
+                    </li>
+                <li><a>  Eglises  </a>
+                    <ul class="depliant">
+                        <li><a href="monuments/cordeliers.html">   Eglise des Cordeliers</a></li>
+                        <li><a href = "monuments/annonciation.html">   Cathédrale de l'Annonciation</a></li>
+                    </ul>
+                    </li>
+                <li><a>  Hôtels particuliers  </a>
+                    <ul class="depliant">
+                        <li><a href="monuments/callot.html">Maison Callot</a></li>
+                        <li><a href="monuments/chastenoy.html">Hôtels de Chastenoy</a></li>
+                        <li><a href="monuments/deux_sirenes.html">Hôtel des Deux Sirènes</a></li>
+                        <li><a href="monuments/ferraris.html">Hôtel Ferraris</a></li>
+                        <li><a href="monuments/haussonville.html">Hôtel d'Haussonville</a></li>
+                        <li><a href="monuments/ligneville.html">Hôtel de Ligneville</a></li>
+                        <li><a href="monuments/lillebonne.html">Hôtel de Lillebonne</a></li>
+                        <li><a href="monuments/loups.html">Hôtel des Loups</a></li>
+                        <li><a href="monuments/ludre.html">Hôtel de Ludre</a></li>
+                    </ul>
+                    </li>
+                </li>
+                <li><a>  Autres monuments  </a>
+                    <ul class="depliant">
+                        <li><a href="monuments/saint-epvre.html">Place Saint-Epvre</a></li>
+                        <li><a href="monuments/craffe.html">Porte de la Craffe</a></li>
+                    </ul>
+                    </li>
+                </li>
             </ul>
         </nav>
 
@@ -70,26 +100,26 @@ mettre du gras sur les mots importants
         <img src="image/menu.png"  class="image_menu"/> 
 
         <nav class="menu_deroulant_lateral"> <!--Rajouter les liens des pages-->
-            <li class="principal"><span  class="fleche"><img src = "image/arrow.png"/></span><a href="accueil_projet_1a.html">Accueil</a></li>
-            <li class="principal"><span  class="fleche"><img src = "image/arrow.png"/></span><a href="ducal.html">   Monuments ducaux</a>
+            <li class="principal"><a href="accueil_projet_1a.html">Accueil</a></li>
+            <li class="principal"><a href="ducal.html">   Monuments ducaux</a>
                 <ul class="niveau1">
                     <li><a href="monuments/stanislas.html">Place Stanislas</a></li>
                     <li><a href="monuments/pepiniere.html">Parc de la pépinière</a></li>
                     <li><a href="monuments/ducal.html">Palais ducal</a></li>
                 </ul>
             </li>
-            <li  class="principal">  <span  class="fleche"><img src = "image/arrow.png"/></span><a href="religieux.html">   Monuments religieux</a> 
+            <li  class="principal"><a href="religieux.html">   Monuments religieux</a> 
                 <ul class="niveau1">
                     <li><a href="monuments/cordeliers.html">   Eglise des Cordeliers</a></li>
                     <li><a href = "monuments/annonciation.html">   Cathédrale de l'Annonciation</a></li>
                 </ul>
             </li>
-            <li  class="principal"><span  class="fleche" onclick="Affichern1()"><img src = "image/arrow.png"/></span><a href="particuliers.html">   Hôtels particuliers</a>
+            <li  class="principal"><a href="particuliers.html">   Hôtels particuliers</a>
                 <ul class="niveau1">
                     <li><a href="monuments/callot.html">Maison Callot</a></li>
                     <li><a href="monuments/chastenoy.html">Hôtels de Chastenoy</a></li>
                     <li><a href="monuments/deux_sirenes.html">Hôtel des Deux Sirènes</a></li>
-                    <li><a href="monuments/ducal.html">Hôtel Ferraris</a></li>
+                    <li><a href="monuments/ferraris.html">Hôtel Ferraris</a></li>
                     <li><a href="monuments/haussonville.html">Hôtel d'Haussonville</a></li>
                     <li><a href="monuments/ligneville.html">Hôtel de Ligneville</a></li>
                     <li><a href="monuments/lillebonne.html">Hôtel de Lillebonne</a></li>
@@ -97,7 +127,7 @@ mettre du gras sur les mots importants
                     <li><a href="monuments/ludre.html">Hôtel de Ludre</a></li>
                 </ul>
             </li>
-            <li class="principal"><span  class="fleche" onclick="Affichern1()"><img src = "image/arrow.png"/></span><a href="#">Autres points remarquables</a>
+            <li class="principal"><a href="#">Autres points remarquables</a>
                 <ul class="niveau1">
                     <li><a href="monuments/saint-epvre.html">Place Saint-Epvre</a></li>
                     <li><a href="monuments/craffe.html">Porte de la Craffe</a></li>
@@ -155,10 +185,18 @@ mettre du gras sur les mots importants
                     </svg>
                 </div>
 
+                <div class="eglise-cordeliers">
+                    <svg width="100%" height="100%" class="carre">
+                        <a href="monuments/cordeliers.html">
+                            <image href= "image/eglise.svg" width="100%" height="100%" />
+                        </a>
+                    </svg>
+                </div>
+
                 <div class="palais-ducal">
                     <svg width="100%" height="100%" class="carre"> 
                         <a href="monuments/ducal.html">
-                            <!--<image href= "" width="100%" height="100%" />-->
+                            <image href= "image/ducal.svg" width="100%" height="100%" />
                         </a>
                     </svg>
                 </div>
@@ -175,14 +213,6 @@ mettre du gras sur les mots importants
                     <svg width="100%" height="100%" class="carre">
                         <a href="monuments/haussonville.html">
                             <image href= "image/haussonville.svg" width="100%" height="100%" />
-                        </a>
-                    </svg>
-                </div>
-
-                <div class="eglise-cordeliers">
-                    <svg width="100%" height="100%" class="carre">
-                        <a href="monuments/cordeliers.html">
-                            <!--<image href= "" width="100%" height="100%" />-->
                         </a>
                     </svg>
                 </div>
@@ -207,7 +237,7 @@ mettre du gras sur les mots importants
                 <div class="deux-sirenes">
                     <svg width="100%" height="100%" class="carre">
                         <a href="monuments/deux_sirenes.html">
-                            <!--<image href= "" width="100%" height="100%" />-->
+                            <image href= "image/deux sirènes.svg" width="100%" height="100%" />
                         </a>
                     </svg>
                 </div>
@@ -216,7 +246,7 @@ mettre du gras sur les mots importants
                 <div class="chastenoy">
                     <svg width="100%" height="100%" class="carre">
                         <a href="monuments/chastenoy.html">
-                            <!--<image href= "" width="100%" height="100%" />-->
+                            <image href= "image/Nancy-Hotel Chastenoy-002.svg" width="100%" height="100%" />
                         </a>
                     </svg>
                 </div>
@@ -225,7 +255,7 @@ mettre du gras sur les mots importants
                 <div class="hotel-loups">
                     <svg width="100%" height="100%" class="carre">
                         <a href="monuments/loups.html">
-                            <!--<image href= "" width="100%" height="100%" />-->
+                            <image href= "image/hotel des loups.svg" width="100%" height="100%" />
                         </a>
                     </svg>
                 </div>
@@ -250,7 +280,7 @@ mettre du gras sur les mots importants
                 <div class="hotel-ludre">
                     <svg width="100%" height="100%" class="carre">
                         <a href="monuments/ludre.html">
-                            <!--<image href= "" width="100%" height="100%" />-->
+                            <image href= "image/custines.svg" width="100%" height="100%" />
                         </a>
                     </svg>
                 </div>
@@ -258,7 +288,7 @@ mettre du gras sur les mots importants
                 <div class="hotel-ferraris">
                     <svg width="100%" height="100%" class="carre">
                         <a href="monuments/ferraris.html">
-                            <!--<image href= "" width="100%" height="100%" />-->
+                            <image href= "image/ferraris 1.svg" width="100%" height="100%" />
                         </a>
                     </svg>
                 </div>
@@ -279,62 +309,71 @@ mettre du gras sur les mots importants
         </div>
 
         <div class="bas-de-page">
+            <div class="marge-bas-de-page">
 
-            <div class="resume-menu">
-                <nav> <!--Rajouter les liens des pages-->
-                    <li class="principal"><span><img src = "image/arrow.png"/></span><a href="accueil_projet_1a.html">Accueil</a></li>
-                    <li class="principal"><span><img src = "image/arrow.png"/></span><a href="ducal.html">   Monuments ducaux</a>
-                        <ul>
-                            <li><a href="monuments/stanislas.html">Place Stanislas</a></li>
-                            <li><a href="monuments/pepiniere.html">Parc de la pépinière</a></li>
-                            <li><a href="monuments/ducal.html">Palais ducal</a></li>
-                        </ul>
-                    </li>
-                    <li  class="principal">  <span><img src = "image/arrow.png"/></span><a href="religieux.html">   Monuments religieux</a> 
-                        <ul>
-                            <li><a href="monuments/cordeliers.html">   Eglise des Cordeliers</a></li>
-                            <li><a href = "monuments/annonciation.html">   Cathédrale de l'Annonciation</a></li>
-                        </ul>
-                    </li>
-                    <li  class="principal"><span onclick="Affichern1()"><img src = "image/arrow.png"/></span><a href="particuliers.html">   Hôtels particuliers</a>
-                        <ul>
-                            <li><a href="monuments/callot.html">Maison Callot</a></li>
-                            <li><a href="monuments/chastenoy.html">Hôtels de Chastenoy</a></li>
-                            <li><a href="monuments/deux_sirenes.html">Hôtel des Deux Sirènes</a></li>
-                            <li><a href="monuments/ducal.html">Hôtel Ferraris</a></li>
-                            <li><a href="monuments/haussonville.html">Hôtel d'Haussonville</a></li>
-                            <li><a href="monuments/ligneville.html">Hôtel de Ligneville</a></li>
-                            <li><a href="monuments/lillebonne.html">Hôtel de Lillebonne</a></li>
-                            <li><a href="monuments/loups.html">Hôtel des Loups</a></li>
-                            <li><a href="monuments/ludre.html">Hôtel de Ludre</a></li>
-                        </ul>
-                    </li>
-                    <li class="principal"><span  onclick="Affichern1()"><img src = "image/arrow.png"/></span><a href="#">Autres points remarquables</a>
-                        <ul>
-                            <li><a href="monuments/saint-epvre.html">Place Saint-Epvre</a></li>
-                            <li><a href="monuments/craffe.html">Porte de la Craffe</a></li>
-                            <li><a href="monuments/grande_rue.html"></a></li>
-                        </ul>
-                    </li>
-                </nav>
-            </div>
+                <div class="resume-menu">
+                    <nav> <!--Rajouter les liens des pages-->
+                        <li class="principal"><a href="accueil_projet_1a.html">  Accueil</a></li>
+                        <li class="principal"><a href="ducal.html">   Monuments ducaux</a>
+                            <ul>
+                                <li><a href="monuments/stanislas.html">Place Stanislas</a></li>
+                                <li><a href="monuments/pepiniere.html">Parc de la pépinière</a></li>
+                                <li><a href="monuments/ducal.html">Palais ducal</a></li>
+                            </ul>
+                        </li>
+                        <li  class="principal">  <a href="religieux.html">   Monuments religieux</a> 
+                            <ul>
+                                <li><a href="monuments/cordeliers.html">   Eglise des Cordeliers</a></li>
+                                <li><a href = "monuments/annonciation.html">   Cathédrale de l'Annonciation</a></li>
+                            </ul>
+                        </li>
+                    </nav>
+                </div>
+                <div class="resume-menu-suite">
+                    <nav>
+                        <li  class="principal"><a href="particuliers.html">   Hôtels particuliers</a>
+                            <ul>
+                                <li><a href="monuments/callot.html">Maison Callot</a></li>
+                                <li><a href="monuments/chastenoy.html">Hôtels de Chastenoy</a></li>
+                                <li><a href="monuments/deux_sirenes.html">Hôtel des Deux Sirènes</a></li>
+                                <li><a href="monuments/ferraris.html">Hôtel Ferraris</a></li>
+                                <li><a href="monuments/haussonville.html">Hôtel d'Haussonville</a></li>
+                                <li><a href="monuments/ligneville.html">Hôtel de Ligneville</a></li>
+                                <li><a href="monuments/lillebonne.html">Hôtel de Lillebonne</a></li>
+                                <li><a href="monuments/loups.html">Hôtel des Loups</a></li>
+                                <li><a href="monuments/ludre.html">Hôtel de Ludre</a></li>
+                            </ul>
+                        </li>
+                        <li class="principal"><a href="#">Autres points remarquables</a>
+                            <ul>
+                                <li><a href="monuments/saint-epvre.html">Place Saint-Epvre</a></li>
+                                <li><a href="monuments/craffe.html">Porte de la Craffe</a></li>
+                                <li><a href="monuments/grande_rue.html"></a></li>
+                            </ul>
+                        </li>
+                    </nav>
+                </div>
 
-            <div class="infos">
-                <nav> <!--Rajouter les liens des pages-->
-                    <ul>
-            
-                            <li><a href="accueil_projet_1a.html">Accueil</a></li>
-                            <li><a href="a_propos.html">À propos</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="source.html">Sources</a></li>
-                            <li><a href="credits.html">Crédits</a></li>
-        
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="titre-et-logo">
+                <div class="infos">
+                    <nav> <!--Rajouter les liens des pages-->
+                        <ul>
                 
+                                <li><a href="accueil_projet_1a.html">Accueil</a></li>
+                                <li><a href="a_propos.html">À propos</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="source.html">Sources</a></li>
+                                <li><a href="credits.html">Crédits</a></li>
+            
+                        </ul>
+                    </nav>
+                </div>
+
+                <hr />
+
+                <div class="titre-et-logo">
+                    <h4>Le Patrimoine Architectural de Nancy</h4>
+                </div>
+
             </div>
 
         </div>
