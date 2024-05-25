@@ -701,7 +701,7 @@ div.bas-de-page{
     margin: 40px;
 }
 
-.resume-menu, .resume-menu-suite, .titre-et-logo{
+.resume-menu, .resume-menu-suite{
     float: left;
     width: 28%;
     box-sizing: inherit;
@@ -759,4 +759,16 @@ hr{
 
 .introduction div.retour a:hover{
     color:#ffffff
+}
+
+.logo-et-titre{
+    float:left;
+    width:25%
+}
+
+.logo-et-titre img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:65%
 }
