@@ -1,32 +1,6 @@
 <!DOCTYPE html>
 
-<!--Tryptique pour passer de local en remote :
-git pull origin main  
-
-git add .
-git commit -m "commentaire"
-git push
--->
-
 .
-
-<!--
- pour la police des titres: voir police Bricktown
- pour les textes : rester simple, avec du arial
- réduire la taille des polices pour les textes.
- faire des coupures entre chaque paragraphe
- couleur : ok, on aura de rechanger
- Faire en sorte que les monuments sur la carte paraissent réellement cliquable
- format horizontal : carte horizontale
- pour le menu : enlever les crédits, les contacts, etc. et les mettre en bas de page
- le menu hamburger : uniquement pour les formats téléphone portable
- intégrer le moodboard : https://www.pinterest.fr/pin/815151601333473613/
- Identité visuelle : en bas de page, dans le cadre : logo surtout
-mettre du gras sur les mots importants
-
-
--->
-
 
 <html lang="fr">
     <head>
@@ -87,6 +61,7 @@ mettre du gras sur les mots importants
                 </li>
                 <li><a>  Autres monuments  </a>
                     <ul class="depliant">
+                        <li><a href="monuments/saint-epvre.html">Place Saint-Epvre</a></li>
                         <li><a href="monuments/craffe.html">Porte de la Craffe</a></li>
                     </ul>
                     </li>
@@ -135,191 +110,15 @@ mettre du gras sur les mots importants
 
         </div>
 
-        <!---->
-        <!-- sémantique du site
-            a gauche : menu déroulant avec les pages de chaque monument
-            en haut : à propos du site, accueil
-            en bas : licence libre ??
-            au centre : carte intéractive
-            fond : noir, qui sépare
-        -->
-        <!-- target="_blank" : permet d'ouvrir un nouvel onglet-->
-
         <div class="cadre_titre"> 
-
-
 
         </div>
 
         <div class="cadre">
-            <h3  id="introduction">Nancy à travers les Âges</h3>
+            <h3  id="introduction">Le Patrimoine Architectural de Nancy</h3>
 
             <div class="introduction">
 
-                <p>Découvrez à travers les pages </p>  
-
-                <p>[brève histoire générale de la ville sur la période qui nous concerne ?]</p>
-
-                <p>Pour bien commencer la navigation sur ce site, cliquez sur les bâtiments sur lesquels vous souhaitez en savoir plus.</p>
-
-            </div>
-
-            <div class="cliquable">
-
-            <img class="carte_nancy" src="image/carte_avancee_test.png" alt="" usemap="#carte" /> <!--Pour la carte cliquable : essayer avec des img en position:absolute sur la carte -->
-
-                <div class="maison-callot">
-                    <svg width="100%" height="100%" class="carre"> 
-                        <a href="monuments/callot.html">
-                            <image href= "image/maison callot.svg" width="100%" height="100%" />
-                        </a>
-                    </svg>
-                </div>
-
-                <div class="place-stanislas">
-                    <svg width="100%" height="100%" class="carre"> 
-                        <a href="monuments/stanislas.html">
-                            <image href= "image/stan.svg" width="100%" height="100%" />
-                        </a>
-                    </svg>
-                </div>
-
-                <div class="eglise-cordeliers">
-                    <svg width="100%" height="100%" class="carre">
-                        <a href="monuments/cordeliers.html">
-                            <image href= "image/eglise.svg" width="100%" height="100%" />
-                        </a>
-                    </svg>
-                </div>
-
-                <div class="palais-ducal">
-                    <svg width="100%" height="100%" class="carre"> 
-                        <a href="monuments/ducal.html">
-                            <image href= "image/ducal.svg" width="100%" height="100%" />
-                        </a>
-                    </svg>
-                </div>
-
-                <div class="porte-craffe">
-                    <svg width="100%" height="100%" class="carre"> 
-                        <a href="monuments/craffe.html">
-                            <image href= "image/craffe.svg" width="100%" height="100%" />
-                        </a>
-                    </svg>
-                </div>
-
-                <div class="hotel-haussonville">
-                    <svg width="100%" height="100%" class="carre">
-                        <a href="monuments/haussonville.html">
-                            <image href= "image/haussonville.svg" width="100%" height="100%" />
-                        </a>
-                    </svg>
-                </div>
-
-                <div class="cathedrale-annonciation">
-                    <svg width="100%" height="100%" class="carre">
-                        <a href="monuments/annonciation.html">
-                            <image href= "image/cathedrale.svg" width="100%" height="100%" />
-                        </a>
-                    </svg>
-                </div>
-
-                <div class="hotel-ligneville">
-                    <svg width="100%" height="100%" class="carre">
-                        <a href="monuments/ligneville.html">
-                            <image href= "image/ligneville.svg" width="100%" height="100%" />
-                        </a>
-                    </svg>
-                </div>
-
-
-                <div class="deux-sirenes">
-                    <svg width="100%" height="100%" class="carre">
-                        <a href="monuments/deux_sirenes.html">
-                            <image href= "image/deux sirènes.svg" width="100%" height="100%" />
-                        </a>
-                    </svg>
-                </div>
-
-                
-                <div class="chastenoy">
-                    <svg width="100%" height="100%" class="carre">
-                        <a href="monuments/chastenoy.html">
-                            <image href= "image/Nancy-Hotel Chastenoy-002.svg" width="100%" height="100%" />
-                        </a>
-                    </svg>
-                </div>
-
-
-                <div class="hotel-loups">
-                    <svg width="100%" height="100%" class="carre">
-                        <a href="monuments/loups.html">
-                            <image href= "image/hotel des loups.svg" width="100%" height="100%" />
-                        </a>
-                    </svg>
-                </div>
-
-                
-                <div class="saint-epvre">
-                    <svg width="100%" height="100%" class="carre">
-                        <a href="monuments/saint-epvre.html">
-                            <!--<image href= "" width="100%" height="100%" />-->
-                        </a>
-                    </svg>
-                </div>
- 
-                <div class="hotel-lillebonne">
-                    <svg width="100%" height="100%" class="carre">
-                        <a href="monuments/lillebonne.html">
-                            <image href= "image/lillebonne.svg" width="100%" height="100%" />
-                        </a>
-                    </svg>
-                </div>
-
-                <div class="hotel-ludre">
-                    <svg width="100%" height="100%" class="carre">
-                        <a href="monuments/ludre.html">
-                            <image href= "image/custines.svg" width="100%" height="100%" />
-                        </a>
-                    </svg>
-                </div>
- 
-                <div class="hotel-ferraris">
-                    <svg width="100%" height="100%" class="carre">
-                        <a href="monuments/ferraris.html">
-                            <image href= "image/ferraris 1.svg" width="100%" height="100%" />
-                        </a>
-                    </svg>
-                </div>
-
-                <div class="parc-pepiniere">
-                    <svg width="100%" height="100%" class="carre">
-                        <a href="monuments/pepiniere.html">
-                            <!--<image href= "" width="100%" height="100%" />-->
-                        </a>
-                    </svg>
-                </div>
-            </div>
-
-            
-            <div class="introduction">
-
-                <div class = "retour" >
-                    <a href="a_propos.html">Qui sommes-nous ?</a>
-                </div>  
-
-                <div class = "retour" >
-                    <a href="source.html">Sur quoi nous nous appuyons ?</a>
-                </div> 
-                
-                <div class = "retour" >
-                    <a href="credits.html">Crédits</a>
-                </div>
-
-                <p></p>
-
-                <p></p>
-                
                 <div class="illustration">
                     <img src="image/ornement11.png" width ="150px"/>
                 </div>
