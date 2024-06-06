@@ -80,6 +80,10 @@ body#lillebonne{
     background-image: url("../image/lillebonne.png"); 
 }
 
+body#cordeliers{
+    background-image: url("../image/cordeliers.png");
+}
+
 
 /* Généralités*/
 
@@ -798,4 +802,52 @@ hr{
 
 .liste_image a:hoover{
     color:rgb(255, 211, 149)
+}
+
+.introduction h3{
+    text-align: center; 
+    color:white; 
+    font-family: "bricktown"
+}
+
+/* Pour les blogs */
+
+.blog{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background:#4f393494;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position:relative;
+}
+
+.blog div, .blog a{
+    display: inline-block;
+}
+
+.blog_texte{
+    position:absolute;
+    left: 30%;
+    top: 20px;
+    width: 65%;
+}
+
+.blog h4{
+    margin-top: 0px;
+}
+
+.blog > div:first-child{
+    width:25%
+}
+
+.blog_texte p{
+    padding-left: 0px;
+    padding-right: 0px;
+    text-indent: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
