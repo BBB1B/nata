@@ -19,6 +19,15 @@ git push
         <title>Nancy à travers les Âges</title>
         <link rel="icon" type="../image/png" sizes="32x32" href="../image/logo_test.png" /> <!-- Glisser une image/logo de taille 32x32 qui apparaîtra dans le moteur de recherche -->
         <meta name="description" content="Décrire en quelques lignes l'objet de notre page"> <!-- Description apparaissant sur le moteur de recherche -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+
+         <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
     </head>
 
     <body id="home_page_nancy">
@@ -154,6 +163,31 @@ git push
                     au-dessus de la porte, elle-même couronnée de feuilles de vigne. De plus, des colonnes striées ornent la façade, et la 
                     présence à leurs pieds de pots, et leurs chapiteaux en forme de volute illustrent ce style architectural.
                 </p>
+
+                <div id="map" style="height: 230px; width:80%; display:block; margin: auto; border-width: thick; border-color: #8e8e8e; margin-top: 30px; margin-bottom: 30px;"></div>
+
+                <script>
+                        
+                    const map = L.map('map').setView([48.695, 6.1794], 15);
+        
+                    const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        maxZoom: 19,
+                        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                    }).addTo(map);
+        
+                    const marker = L.marker([48.695, 6.1794]).addTo(map)
+                        .bindPopup('<b>Hôtel de Ludres</b><br />').openPopup();
+        
+                    function onMapClick(e) {
+                        popup
+                            .setLatLng(e.latlng)
+                            .setContent(`You clicked the map at ${e.latlng.toString()}`)
+                            .openOn(map);
+                    }
+        
+                    map.on('click', onMapClick);
+        
+                </script>
 
                 <div class="illustration">
                     <img src="../image/ornement3.png" width ="150px"/>
